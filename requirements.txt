@@ -6,6 +6,6 @@ MarkupSafe==1.1.1
 Workzeug==0.15.5
 numpy>=1.9.2
 scipy>=0.15.0
-scikit-learn=1.4.3
+scikit-learn==1.4.3
 matplotlib>=1.4.3
 pandas>=0.19
