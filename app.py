@@ -80,15 +80,15 @@ def predict():
     clf = joblib.load('model.pkl')
     count_vect = joblib.load('count_vect.pkl')
     to_predict_list = request.form.to_dict()
-    review_text = clean_text(to_predict_list['Review'])
+    review_text = clean_text(to_predict_list['review_text'])
     pred = clf.predict(count_vect.transform([review_text]))
    
 
     output = round(pred[0], 2)
-    return render_template('index1.html', prediction_text='The Predicted Rating is {}'.format(output))
+    return flask.render_template('index1.html', prediction_text='The Predicted Rating is {}'.format(output))
 
 
 if __name__ == '__main__':
     app.debug = True
     app.run()
-   
+    app.run(host='0.0.0.0', port=5050)
