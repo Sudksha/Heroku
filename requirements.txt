@@ -7,9 +7,6 @@ itsdangerous==2.0.1
 Jinja2==3.0.1
 joblib==1.0.1
 MarkupSafe==2.0.1
-
-mkl-random @ file:///C:/ci/mkl_random_1626186184278/work
-mkl-service==2.4.0
 numpy==1.21.2
 pandas==1.3.2
 python-dateutil==2.8.2
